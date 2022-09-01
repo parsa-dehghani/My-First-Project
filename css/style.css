@@ -1,0 +1,92 @@
+@import url(font-awesome.min.css);
+/* the primitive styles */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #333;
+  padding: 0;
+}
+.clear-fix::after,
+.clear-fix::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.title {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: #ccc;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+}
+.title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background-color: #f9b500;
+  width: 80px;
+  height: 5px;
+  z-index: 1;
+}
+a ,b{
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.text-yellow {
+  color: #f9b500;
+}
+a:hover > b,
+.a-hover:hover {
+  color: #f9b500;
+}
+.caption-title b {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 20px;
+}
+.caption-info-bar li {
+  display: inline-block;
+  margin-right: 20px;
+  color: #ffffff;
+  line-height: 25px;
+}.info-bar{
+    padding: 10px 0 20px 0;
+}
+/* the header styles */
+.app {
+  margin: 0 50px;
+  width: calc(100% - 100px);
+}
+header {
+  padding: 25px 0;
+}
+header nav {
+  float: right;
+}
+header .logo {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}
+.header-menu-item {
+  display: inline-block;
+  margin: 0 12px;
+}
+.header-menu-item-link {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
