@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+@import url(../fontawesome-free-6.2.0-web/css/all.min.css);
 /* the primitive styles */
 * {
   box-sizing: border-box;
@@ -39,7 +39,8 @@
   height: 5px;
   z-index: 1;
 }
-a ,b{
+a,
+b {
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -60,8 +61,9 @@ a:hover > b,
   margin-right: 20px;
   color: #ffffff;
   line-height: 25px;
-}.info-bar{
-    padding: 10px 0 20px 0;
+}
+.info-bar {
+  padding: 10px 0 20px 0;
 }
 /* the header styles */
 .app {
@@ -70,7 +72,7 @@ a:hover > b,
 header {
   padding: 25px 0;
 }
-header nav {
+header .header-menu {
   float: right;
 }
 header .logo {
@@ -90,27 +92,51 @@ ul {
   font-weight: 700;
 }
 /* responsive styles */
-@media (max-width:1199.98px){
-  .app{
+@media (max-width: 1199.98px) {
+  .app {
     width: 992px;
   }
 }
-@media (max-width:991.98px){
-  .app{
+@media (max-width: 991.98px) {
+  .app {
     width: 768px;
   }
-  .logo img{
+  .logo img {
     height: 15px;
   }
 }
-@media (max-width:767.98px){
-  .app{
+@media (max-width: 767.98px) {
+  .app {
     width: 576px;
   }
 }
-@media (max-width:575.98px){
-     .app{
-      width: calc(100% - 30px);
-      padding: 0 15px;
-     }
+@media (max-width: 575.98px) {
+  .app {
+    width: calc(100% - 30px);
+    padding: 0 15px;
+  }
+  /* create burger menu */
+}
+.show {
+  display: inline-block !important;
+}
+.header-button {
+  border: 0;
+  background-color: white;
+  float: right;
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .header-button {
+    display: block;
+  }
+  .header-menu {
+    display: none;
+    width: 100%;
+  }
+  .header-menu-item {
+    display: block;
+    border-bottom: 1px solid #cecece;
+    line-height: 80px;
+  }
 }
