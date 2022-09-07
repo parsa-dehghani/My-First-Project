@@ -56,7 +56,7 @@ a:hover > b,
   font-weight: 800;
   font-size: 20px;
 }
-.caption-info-bar li {
+ li {
   display: inline-block;
   margin-right: 20px;
   color: #ffffff;
@@ -143,6 +143,7 @@ ul {
 }
 .intro-h-600px{
   height: 600px;
+  margin-bottom: 50px;
 }
 .intro-row{
   width: 100%;
@@ -263,4 +264,109 @@ ul {
     .h-md-300{
       height: 300px !important;
     }
+}
+.main-news li{
+  color: #333;
+}
+.container{
+  float: left;
+  width: calc(calc(200%/3) - 25px);
+  margin-right: 25px;
+}
+.main-news-images{
+  width: 100%;
+  height: 100%;
+  margin:  0 0 20px 0;
+}
+.main-news h3 a b{
+  font-size: 25px;
+  font-weight: 700;
+}
+.main-news p{
+  font-size: 16px;
+}
+.main-news{
+  margin-bottom: 30px;
+}
+.main-second-50:nth-of-type(1){
+  width: calc(calc(100%/2) - 10px);
+  float: left;
+  margin-right: 10px;
+}
+.main-second-50:nth-of-type(2){
+  float: right;
+  width: calc(calc(100%/2));
+}
+.main-second-50 img{
+  width: 100%;
+  height: 100%;
+}
+.aside{
+  float: right;
+  width: calc( calc(100%/3) - 20px);
+  margin-left: 20px;
+  
+}
+.btc-bar{
+  width: 100%;
+  margin-bottom: 35px;
+}
+.btc-bar-item{
+  background-color: #f9b500;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+  color: #333;
+  font-weight: 800;
+  font-size: 16px;
+}
+.second-aside-section{
+  margin-bottom: 60px;
+}
+.second-aside-section-item{
+  margin-bottom: 45px;
+}
+.second-aside-section-item img{
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.second-aside-section-item-title{
+  float: right;
+  width: calc(100% - 120px);
+  margin:0 10px;
+}
+.second-aside-section-item-title h2 a b{
+  font-size: 20px;
+  font-weight: 800;
+}
+.aside-info-bar li{
+  color: #333;
+  font-size: 16px;
+}
+.subscribe-form{
+  width: 100%;
+  margin-top: 40px;
+  border: none;
+}
+.subscribe-form-email{
+  width: calc(85% - 2px);
+  border: 1px solid #f9b500;
+  padding: 10px;
+  height: 40px;
+  margin: 0;
+  float: left;
+}
+.button{
+  width: 15%;
+  background-color: #f9b500;
+  height: 40px;
+  border: none;
+  margin: 0;
+  float: right;
+}
+.third-aside-section p{
+  font-size: 16px ;
 }
