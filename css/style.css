@@ -6,6 +6,7 @@
   font-size: 14px;
   color: #333;
   padding: 0;
+  font-family: sans-serif;
 }
 .clear-fix::after,
 .clear-fix::before {
@@ -49,7 +50,7 @@ b {
 }
 a:hover > b,
 .a-hover:hover {
-  color: #f9b500;
+  color: #f9b500 !important;
 }
 .caption-title b ,.caption-title {
   color: #ffffff;
@@ -265,6 +266,10 @@ ul {
       height: 300px !important;
     }
 }
+/* main-styles */
+.main{
+  margin-bottom: 20px;
+}
 .main-news li{
   color: #333;
 }
@@ -300,6 +305,9 @@ ul {
 .main-second-50 img{
   width: 100%;
   height: 100%;
+}
+.main-second-news .info-bar li a b{
+  color: #333;
 }
 .aside{
   float: right;
@@ -339,7 +347,7 @@ ul {
   margin:0 10px;
 }
 .second-aside-section-item-title h2 a b{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
 }
 .aside-info-bar li{
@@ -369,4 +377,102 @@ ul {
 }
 .third-aside-section p{
   font-size: 16px ;
+}
+@media (max-width:991px){
+  .container{
+    width: 100%;
+  }
+  .aside{
+    width: 100%;
+  }
+}
+/* footer styles */
+.footer{
+  background-color: #191919;
+}
+.footer-bg{
+  width: calc(100% - 150px );
+  background: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.footer-container{
+    background-color: rgba(25, 25, 25, 0.9);
+    width: 100%;
+  padding: 20px 0;
+}
+.footer-section p,.footer-section h3 a b,.footer-section p a {
+  color: #cccccc;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.footer-section{
+  float: left;
+  width: calc(calc(100%/3) - 30px);
+}
+.footer-section{
+  margin: 0 10px;
+  padding: 5px;
+}
+.footer-item-item{
+  border-bottom: 1px solid rgba(170, 170, 170, .2);
+  margin: 0 15px  15px 0;
+  line-height: 10px;
+}
+.no-b{
+  border: none;
+}
+.footer-item-item h3{
+    margin-bottom: 20px;
+}
+.footer-first-section-item img{
+  margin-bottom: 15px;
+}
+.footer-first-section{
+  border-bottom: 1px solid rgba(170, 170, 170, .2);
+}
+.footer-menu{
+  float: left;
+  padding: 30px 0;
+
+}
+.footer-menu-icon{
+  float: right;
+  padding:30px 0;
+}
+.footer-menu-icon li i{
+  font-size: 20px;
+  transition: all 0.2s
+}
+.footer-menu-icon li:nth-of-type(1) i:hover {
+   color: rgb(255, 38, 0);
+} 
+.footer-menu-icon li:nth-of-type(2) i:hover {
+  color: #4867AA;
+}
+.footer-menu-icon li:nth-of-type(3) i:hover {
+  color: #1DA1F2;
+}
+.footer-menu-icon li:nth-of-type(4) i:hover {
+  color: #D44D40;
+}
+@media (max-width:767px){
+  .footer-section{
+    width: 100%;
+    margin-bottom: 30px;
+    float: none;
+  }
+  .footer-menu-icon{
+    padding: 0;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-menu{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 }
